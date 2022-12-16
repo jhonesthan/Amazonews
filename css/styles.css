@@ -1,5 +1,5 @@
 :root {
-    --colorGreen: rgb(100, 250, 100);
+    --colorGreen: rgb(210, 133, 18);
     --fontFamily: Helvetica;
 }
 body {              /*Corpo da página formatado*/
@@ -37,11 +37,8 @@ header {
 }
 .social-icons i {
     margin: 0 8px;
-    font-size: 20px;
-    /* font-size: 1.4rem; */
+    font-size: 30px;
     cursor: pointer;
-    /* padding: 5px; */
-    /* background-color: #3c1b75; */
 }
 .social-icons i:hover{
     border-color: var(--colorGreen);
@@ -245,11 +242,9 @@ aside h4 {
     text-decoration: none;
     margin: 10px;
     color: #fff;
-    padding-top: 8px 5px;
     font-size: 14px;
-    /* background-color: #3c1b75; */
     text-align: center;
-    margin-top: 35px;
+    margin-top: 20px;
 }
 .recent-news a:hover {
     cursor: pointer;
@@ -285,11 +280,10 @@ aside h4 {
     flex: 30%;
 }
 .about, .subscribe, .instagram {
-    background-color: #202020;
+    /* background-color: #202020; */
     margin: 0 30px 0 0;
     padding: 40px;
     border-radius: 15px;
-    /* border: 1px solid var(--colorGreen); */
     text-align: center;
 }
 .about i{
@@ -355,6 +349,34 @@ aside h4 {
     text-align: center;
 }  
 
+.copyright img {
+    max-width: 90%;
+    /* padding: 5px 0px; */
+    margin: 5px;
+}
+.copyright a {
+    padding-top: 10px;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+/* adicionado recentemente */
+
+body a {
+    text-decoration: none;
+    color: rgb(38, 170, 231);
+}
+
+.verde {
+    color: rgb(29, 203, 47);
+}
+.laranja {
+    color: rgb(210, 133, 18);
+}
+.azul {
+    color: #0d1bd7;
+}
+
 
 /* --------------------------------------------RESPONSIVIDADE------------------- */
 @media only screen and (max-width: 1024px) {
@@ -375,14 +397,15 @@ aside h4 {
     }
     .social-icons {
         text-align: center;
-        margin-right: 45px;
+        /* margin-right: 45px; */
     }
     .social-icons i {
-        font-size: 17px;
+        
         cursor: pointer;
     }
     .breaking-news-section {
-        padding: 10px;
+        padding: 12px 10px;
+        
         flex-wrap: wrap;
         height: 70px;
     }
@@ -440,3 +463,42 @@ aside h4 {
         border-bottom-left-radius: 15px;
     }
 }
+
+
+
+@media only screen and (max-width: 430px) {
+   
+   
+
+
+    header{
+       
+        height: 9rem;
+
+    }
+    .breaking-news-section {
+        margin-bottom: 0;
+        
+
+
+    }
+
+    .website-header {
+        padding-right: 0;
+    }
+    .website-header i {
+        font-size: 20px;
+        
+        
+    }
+    .popular-news-text {
+        font-size: 15px;
+    }
+    
+    .instagram img {
+        background-color: #3c1b75;
+        padding: 2px;
+        /* margin: 10px 15px; */
+
+    }
+    }
